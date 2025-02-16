@@ -390,7 +390,7 @@ export class BarCard extends LitElement {
               hasDoubleClick: hasAction(config.double_tap_action),
             })}
           >
-            ${iconOutside} ${indicatorOutside} ${nameOutside}
+            ${iconOutside} ${indicatorOutside} ${nameOutside} ${valueOutside}
             <bar-card-background
               style="margin: ${backgroundMargin}; height: ${barHeight}${typeof barHeight == 'number'
                 ? 'px'
@@ -425,7 +425,7 @@ export class BarCard extends LitElement {
                 ${iconInside} ${indicatorInside} ${nameInside} ${minMaxInside} ${valueInside}
               </bar-card-contentbar>
             </bar-card-background>
-            ${minMaxOutside} ${valueOutside}
+            ${minMaxOutside}
           </bar-card-card>
         `);
 
